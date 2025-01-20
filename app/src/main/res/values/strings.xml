@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">VaccinationBookingApp</string>
+
+    <!--    Campus Info -->
+    <!-- campus <Tsing Yi> -->
+    <string name="campus_tsing_yi_name">Tsing Yi</string>
+    <string name="campus_tsing_yi_address">20 Tsing Yi Road, Tsing Yi Island, New Territories</string>
+    <string name="campus_tsing_yi_location">https://www.google.com.hk/maps/place/%E9%A6%99%E6%B8%AF%E5%B0%88%E6%A5%AD%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2/@22.3426831,114.1060674,17z/data=!4m5!3m4!1s0x3403f8d2dc85656f:0xe52d12c0080581c8!8m2!3d22.3424251!4d114.106282?hl=zh-TW</string>
+    <string name="campus_tsing_yi_tel">2436 8333</string>
+    <string name="campus_tsing_yi_email">ty-cs@vtc.edu.hk</string>
+    <!-- campus <Chai Wan> -->
+    <string name="campus_chai_wan_name">Chai Wan</string>
+    <string name="campus_chai_wan_address">30 Shing Tai Road, Chai Wan, Hong Kong</string>
+    <string name="campus_chai_wan_location">https://www.google.com.hk/maps/place/%E6%9F%B4%E7%81%A3%E7%9B%9B%E6%B3%B0%E9%81%9330%E8%99%9F%E9%A6%99%E6%B8%AF%E5%B0%88%E6%A5%AD%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2(%E6%9F%B4%E7%81%A3%E5%88%86%E6%A0%A1)/@22.2718581,114.2375112,17z/data=!3m1!4b1!4m5!3m4!1s0x3404022a6e651dad:0xbc7f9214364a39b2!8m2!3d22.2718581!4d114.2396999?hl=zh-TW</string>
+    <string name="campus_chai_wan_tel">2595 8333</string>
+    <string name="campus_chai_wan_email">cw-cs@vtc.edu.hk</string>
+    <!-- campus <HKDI> -->
+    <string name="campus_hkdi_name">HKDI</string>
+    <string name="campus_hkdi_address">3 King Ling Road, Tseung Kwan O, Hong Kong</string>
+    <string name="campus_hkdi_tel">3928 2000</string>
+    <string name="campus_hkdi_location">https://www.google.com/maps/place/%E9%A6%99%E6%B8%AF%E7%9F%A5%E5%B0%88%E8%A8%AD%E8%A8%88%E5%AD%B8%E9%99%A2/@22.3061241,114.2520459,17z/data=!4m5!3m4!1s0x340403efc96dcf71:0x155421d8c0f5fab8!8m2!3d22.305728!4d114.25345?shorturl=1</string>
+    <string name="campus_hkdi_email">hkdi@vtc.edu.hk</string>
+    <!-- campus <Tuen Mun> -->
+    <string name="campus_tuen_mun_name">Tuen Mun</string>
+    <string name="campus_tuen_mun_address">18 Tsing Wun Road, Tuen Mun, New Territories</string>
+    <string name="campus_tuen_mun_location">https://www.google.com.hk/maps/place/%E9%A6%99%E6%B8%AF%E5%B0%88%E6%A5%AD%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E5%B1%AF%E9%96%80%E5%88%86%E6%A0%A1/@22.3935231,113.9641896,17z/data=!4m5!3m4!1s0x3403fb3a647cc5db:0x844339a226d51668!8m2!3d22.3930841!4d113.9664731?hl=zh-TW&amp;shorturl=1</string>
+    <string name="campus_tuen_mun_tel">2463 0066</string>
+    <string name="campus_tuen_mun_email">tm-cs@vtc.edu.hk</string>
+    <!--    End-->
+
+    <!--    Vaccine Info -->
+    <!--    Comirnaty  -->
+    <string name="vaccine_comirnaty_name">Comirnaty</string>
+    <string name="vaccine_comirnaty_maunfacturer_info">test</string>
+    <string name="vaccine_comirnaty_dosages">test</string>
+    <string name="vaccine_comirnaty_side_effects">test</string>
+    <!--    CoronaVac  -->
+    <string name="vaccine_coronavac_name">CoronaVac</string>
+    <string name="vaccine_coronavac_maunfacturer_info">test</string>
+    <string name="vaccine_coronavac_dosages">test</string>
+    <string name="vaccine_coronavac_side_effects">test</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_campus_detail">CampusDetailActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    end -->
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="campus">
+        <item>Tsing Yi</item>
+        <item>Chai Wan</item>
+        <item>HKDI</item>
+        <item>Tuen Mun</item>
+    </string-array>
+
+    <string-array name="timeSlot">
+        <item />
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+    </string-array>
+
+    <string name="preference_file_key">booking_info</string>
+    <string name="preference_key">my_booking</string>
+    <string name="preference_key_first_booking">first_booking</string>
+    <string name="preference_key_second_booking">second_booking</string>
+</resources>

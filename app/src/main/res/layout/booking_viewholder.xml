@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_vh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/booking_vh_date"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="date"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/booking_vh_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_vh_time"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="time"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/booking_vh_place"
+        app:layout_constraintLeft_toLeftOf="@id/booking_vh_date"
+        app:layout_constraintTop_toBottomOf="@+id/booking_vh_date" />
+
+    <TextView
+        android:id="@+id/booking_vh_place"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="place"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/booking_vh_textview"
+        app:layout_constraintLeft_toLeftOf="@id/booking_vh_time"
+        app:layout_constraintTop_toBottomOf="@+id/booking_vh_time" />
+
+    <TextView
+        android:id="@+id/booking_vh_textview"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="CoronaVac"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/booking_vh_place"
+        app:layout_constraintTop_toBottomOf="@+id/booking_vh_place" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_right_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+{
+  "vaccineInfo": [
+    {
+      "name": "CoronaVac",
+      "manufacturer": "Sinovac Biotech (Hong Kong) Limited",
+      "dosages": [
+        "Two doses should be administered for primary immunization",
+        "The second dose is preferably given 28 days after the first dose",
+        "0.5ml per dose"
+      ],
+      "sideEffects": [
+        {
+         "level": "Very Common\n(≥10% people)",
+         "sideEffect": [
+            "Injection site: pain",
+            "Headache",
+            "Fatigue"
+          ]
+        },
+        {
+         "level": "Common\n(1% - 10% people)",
+         "sideEffect": [
+            "Injection site swelling, pruritus, erythema, induration",
+            "Myalgia",
+            "Diarrhea",
+            "Arthralgia",
+            "Cough",
+            "Chills",
+            "Pruritus",
+            "Loss of appetite",
+            "Rhinorrhea",
+            "Sore throat",
+            "Nasal congestion",
+            "Abdominal pain"
+          ]
+        },
+        {
+         "level": "Uncommon\n(0.1% - 1% people)",
+         "sideEffect": [
+            "Burn at injection site",
+            "Vomit",
+            "Hypersensitivity",
+            "Abnormal skin and mucosa",
+            "Fever",
+            "Tremor",
+            "Flushing",
+            "Edema",
+            "Dizziness",
+            "Frowsiness"
+          ]
+        },
+        {
+         "level": "Rare\n(0.01% - 0.1% people)",
+         "sideEffect": [
+            "Muscle spasms",
+            "Eyelid edema",
+            "Nosebleeds",
+            "Abdominal distension",
+            "Constipation",
+            "Hyposmia",
+            "Ocular congestion",
+            "Hot flashes",
+            "Hiccup",
+            "Conjunctival congestion"
+          ]
+        },
+        {
+         "level": "Very rare\n(<0.01% people)",
+         "sideEffect": [
+            "Bell's palsy (Observed post-authorization in Hong Kong)"
+          ]
+        },
+        {
+         "level": "Serious",
+         "sideEffect": [
+            "No serious adverse event related to vaccination was identified up to 3 February 2021"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comirnaty",
+      "manufacturer": "Fosun Pharma in collaboration with the German drug manufacturer BioNTech (BNT162b2 mRNA vaccine)",
+      "dosages": [
+        "Comirnaty is given after dilution as an injection of 0.3ml into a muscle of your upper arm. ",
+        "2 injections, given at least 21 days apart"
+      ],
+      "sideEffects": [
+        {
+         "level": "Very Common\n(≥10% people)",
+         "sideEffect": [
+            "Injection site: pain, swelling",
+            "Tiredness",
+            "Headache",
+            "Muscle pain",
+            "Chills",
+            "Joint pain",
+            "Diarrhea",
+            "Fever"
+          ]
+        },
+        {
+         "level": "Common\n(1% - 10% people)",
+         "sideEffect": [
+            "Injection site redness",
+            "Nausea",
+            "Vomiting"
+          ]
+        },
+        {
+         "level": "Uncommon\n(0.1% - 1% people)",
+         "sideEffect": [
+            "Enlarged lymph nodes",
+            "Feeling unwell",
+            "Arm pain",
+            "Insomnia",
+            "Injection site itching",
+            "Allergic reactions (e.g. rash, itching)"
+          ]
+        },
+        {
+         "level": "Rare\n(0.01% - 0.1% people)",
+         "sideEffect": [
+            "Temporary one-sided facial drooping",
+            "Allergic reactions (e.g. hives, swelling of the face)"
+          ]
+        },
+        {
+         "level": "Very rare\n(<0.01% people)",
+         "sideEffect": [
+            "Severe allergic reaction",
+            "Myocarditis or pericarditis which can result in breathlessness, palpitations or chest pain"
+          ]
+        },
+        {
+         "level": "Serious",
+         "sideEffect": ["N/A"]
+        }
+      ]
+    }
+    ]
+}

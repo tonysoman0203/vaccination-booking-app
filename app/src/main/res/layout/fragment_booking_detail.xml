@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/booking_detail_vaccine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Vaccine"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/booking_detail_vaccine_text_1st_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/booking_detail_vaccine_text" />
+
+        <View
+            android:id="@+id/booking_detail_left_anchor"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_vaccine_text_1st_underline" />
+
+        <View
+            android:id="@+id/booking_detail_right_anchor"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_marginRight="200dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_left_anchor" />
+
+        <TextView
+            android:id="@+id/booking_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Date: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_left_anchor" />
+
+        <TextView
+            android:id="@+id/booking_detail_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18-Oct,21"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_date" />
+
+        <TextView
+            android:id="@+id/booking_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Time: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_date" />
+
+        <TextView
+            android:id="@+id/booking_detail_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:34"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_time" />
+
+        <TextView
+            android:id="@+id/booking_detail_campus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Campus: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_time" />
+
+        <TextView
+            android:id="@+id/booking_detail_campus_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tsing Yi"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_campus" />
+
+        <ImageButton
+            android:id="@+id/booking_detail_btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call"
+            android:src="@drawable/ic_baseline_call_24"
+            app:layout_constraintEnd_toStartOf="@+id/booking_detail_btn_mail"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_campus" />
+
+        <ImageButton
+            android:id="@+id/booking_detail_btn_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mail"
+            android:src="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toStartOf="@+id/booking_detail_btn_map"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/booking_detail_btn_call"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_campus" />
+
+        <ImageButton
+            android:id="@+id/booking_detail_btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Map"
+            android:src="@drawable/ic_baseline_map_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/booking_detail_btn_mail"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_campus" />
+
+        <View
+            android:id="@+id/booking_detail_vaccine_text_2nd_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/booking_detail_btn_map" />
+
+        <TextView
+            android:id="@+id/booking_detail_personal_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Personal Info"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_vaccine_text_2nd_underline" />
+
+        <TextView
+            android:id="@+id/booking_detail_f_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="F.Name: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_personal_info" />
+
+        <TextView
+            android:id="@+id/booking_detail_f_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adam"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_f_name" />
+
+        <TextView
+            android:id="@+id/booking_detail_l_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="L.Name: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_f_name" />
+
+        <TextView
+            android:id="@+id/booking_detail_l_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smith"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_l_name" />
+
+        <TextView
+            android:id="@+id/booking_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="ID: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_l_name" />
+
+        <TextView
+            android:id="@+id/booking_detail_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1234567"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_id" />
+
+        <TextView
+            android:id="@+id/booking_detail_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Gender: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_id" />
+
+        <TextView
+            android:id="@+id/booking_detail_gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_gender" />
+
+        <TextView
+            android:id="@+id/booking_detail_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Age: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/booking_detail_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_detail_gender" />
+
+        <TextView
+            android:id="@+id/booking_detail_age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/booking_detail_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_detail_age" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

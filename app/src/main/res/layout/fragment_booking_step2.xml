@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/booking_step2_left_anchor"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/booking_step2_right_anchor"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/booking_step2_left_anchor" />
+
+        <TextView
+            android:id="@+id/booking_step2_vaccine_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Vaccine: "
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_left_anchor" />
+
+        <FrameLayout
+            android:id="@+id/booking_step2_vaccine_comirnaty_framelayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/comirnaty"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintRight_toLeftOf="@id/booking_step2_vaccine_coronavac_framelayout"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_vaccine_textview"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/booking_step2_vaccine_comirnaty_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                android:layout_gravity="bottom|end"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/booking_step2_vaccine_coronavac_framelayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/coronavac"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toRightOf="@id/booking_step2_vaccine_comirnaty_framelayout"
+            app:layout_constraintRight_toRightOf="@id/booking_step2_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_step2_vaccine_comirnaty_framelayout">
+<!--            <ImageView-->
+<!--                android:id="@+id/booking_step2_vaccine_coronavac_imageview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:src="@drawable/coronavac" />-->
+            <ImageView
+                android:id="@+id/booking_step2_vaccine_coronavac_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_check_circle_24"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/booking_step2_campus_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Campus"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_vaccine_comirnaty_framelayout" />
+
+        <Spinner
+            android:id="@+id/booking_step2_campus_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/campus"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintRight_toRightOf="@id/booking_step2_right_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_campus_textview" />
+
+        <TextView
+            android:id="@+id/booking_step2_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Date"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_campus_spinner" />
+
+        <EditText
+            android:id="@+id/booking_step2_date_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:editable="false"
+            android:drawableEnd="@drawable/ic_round_calendar_view_month_24"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintRight_toRightOf="@id/booking_step2_right_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_date_textview" />
+
+        <TextView
+            android:id="@+id/booking_step2_timeslot_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Timeslot"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_date_edittext" />
+
+        <Spinner
+            android:id="@+id/booking_step2_timeslot_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/timeSlot"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintRight_toRightOf="@id/booking_step2_right_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_timeslot_textview" />
+
+        <TextView
+            android:id="@+id/booking_step2_capacity_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Capacity"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_timeslot_spinner" />
+
+
+        <Button
+            android:id="@+id/booking_step2_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/green"
+            android:text="Back"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@id/booking_step2_left_anchor"
+            app:layout_constraintTop_toBottomOf="@id/booking_step2_capacity_textview" />
+
+        <Button
+            android:id="@+id/booking_step2_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/green"
+            android:text="Next"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintRight_toRightOf="@id/booking_step2_right_anchor"
+            app:layout_constraintTop_toTopOf="@id/booking_step2_btn_back" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
